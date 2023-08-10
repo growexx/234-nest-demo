@@ -18,11 +18,68 @@
 
 [Nest](https://github.com/nestjs/nest) framework Demo repository.
 
+# NestJS Demo
+This is a nestjs demo boilerplate with basic user authentication and uses AWS SES for sending emails. This boilerplate has following features:
+- User signup
+- User signin
+- User profile
+- Simple Blog CRUD demo
+---
+
+## Requirements
+
+For development, you will only need Node.js and a node global package installed in your environement.
+
+### Node
+- #### Node installation on Windows
+
+  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
+Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
+
+- #### Node installation on Ubuntu
+
+  You can install nodejs and npm easily with apt install, just run the following commands.
+
+      $ sudo apt install nodejs
+      $ sudo apt install npm
+
+- #### Other Operating Systems
+  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
+
+If the installation was successful, you should be able to run the following command.
+
+    $ node --version
+    v18.6.0
+
+    $ npm --version
+    8.13.2
+
+If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
+
+    $ npm install npm -g
+
 ## Installation
 
 ```bash
-$ npm install
+npm i -g @nestjs/cli
 ```
+
+    $ git clone https://github.com/YOUR_USERNAME/PROJECT_TITLE
+    $ cd PROJECT_TITLE
+    $ npm install
+
+## Configure app
+
+Create an environment file with extension ```.env```.
+
+- Create a environment file with prefix your NODE_ENV  ```YOUR_ENV.env```
+- Add a port with ```PORT={VALUE}``` to your env file
+- Add a MongoDB username with ```DB_USERNAME={VALUE}``` to your env file
+- Add a MongoDB password with ```DB_PASSWORD={VALUE}``` to your env file
+- Add a MongoDB host with ```DB_HOST={VALUE}``` to your env file
+- Add a MongoDB name with ```DB_NAME={VALUE}``` to your env file
+- Add a JWT secret with ```JWT_SECRET={VALUE}``` to your env file
+- Similarly add/change other fields as per your need.
 
 ## Running the app
 
@@ -33,23 +90,11 @@ $ npm run start
 # watch mode
 $ npm run start:dev
 
-# production mode
-$ npm run start:prod
 ```
 
-## Test
+## Testing the app
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
 $ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
