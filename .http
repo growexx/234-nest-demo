@@ -1,0 +1,10 @@
+### GET ALL MY POSTS
+GET http://localhost:3500/blog HTTP/1.1
+Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNWYyY2QyZjE0NzJjMzMwM2I2Yjg2MSIsImVtYWlsIjoic3VwZXJAbWFpbGluYXRvci5jb20iLCJyb2xlIjo0LCJpYXQiOjE2ODc2OTgyNjUsImV4cCI6MTY4NzY5ODI3MH0.EuMzB31VgkFSYA-XUeaGIAvAPLsiuAhWNVcnque1ZgY'
+
+### GET POST
+GET http://localhost:3500/blog/64677675721c009374e9fe17 HTTP/1.1
+
+### GET ALL POST
+GET http://localhost:3500/blog/list HTTP/1.1
+
